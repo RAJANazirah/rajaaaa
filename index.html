@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home - My Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(135deg, #ffeef4, #f0fff0); /* Pink Matcha theme */
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #f9c5d1;
+      padding: 20px 0;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(255, 182, 193, 0.3);
+    }
+
+    header h1 {
+      color: #4e342e;
+      font-size: 2rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 15px;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #4e342e;
+      font-weight: 600;
+      padding: 8px 14px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      background-color: #ffccda;
+    }
+
+    /* Dropdown menu */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #fce4ec;
+      min-width: 140px;
+      border-radius: 8px;
+      top: 36px;
+      left: 0;
+      z-index: 999;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content li {
+      padding: 8px;
+    }
+
+    .dropdown-content li a {
+      display: block;
+      padding: 8px 12px;
+      color: #4e342e;
+    }
+
+    .dropdown-content li a:hover {
+      background-color: #f8bbd0;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      background: #fffafc;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    main img.profile {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 25px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #880e4f;
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+    }
+
+    p {
+      margin-bottom: 15px;
+      font-size: 15px;
+      color: #4e342e;
+    }
+
+    .contact-section {
+      margin-top: 40px;
+    }
+
+    .button {
+      display: inline-block;
+      text-decoration: none;
+      color: white;
+      background-color: #ec407a;
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-weight: 600;
+      margin: 10px 8px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .button:hover {
+      background-color: #d81b60;
+      transform: translateY(-2px);
+    }
+
+    .whatsapp {
+      background-color: #25D366;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 13px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Resume</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="experiences.html">Experiences</a></li>
+        <li class="dropdown">
+          <a href="#">More</a>
+          <ul class="dropdown-content">
+            <li><a href="Music.html">Music</a></li>
+            <li><a href="Hobby.html">Hobby</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <img src="gambar raja html.jpg" alt="My Profile Photo" class="profile">
+
+    <h2>Welcome to My Resume Website</h2>
+    <p>Hello and welcome! My name is <strong>[Raja Alfa Nazirah Binti Raja Daud]</strong>, and this is my personal digital resume.</p>
+    <p>Here you will find a summary of my academic background, achievements, work experience, and a glimpse into my interests like music, movies, and hobbies.</p>
+    <p>I currently looking for a job to gain more experiences. Thank you for stopping by!</p>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <h2>Contact Me</h2>
+      <p>Have a question or want to connect? Reach me through:</p>
+      <a href="mailto:Rajaalfa04.gmail.com" class="button">Email Me</a>
+      <a href="https://wa.me/601117832935" class="button whatsapp" target="_blank">WhatsApp Me</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Resume. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
